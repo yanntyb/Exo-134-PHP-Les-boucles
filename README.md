@@ -17,18 +17,24 @@ Différentes instructions existent :
 
 - while : On execute le bloc de code tant que la condition est vrai
 
+````php
 while(condition) {
     //code à executer
 }
+````
+
 
 Exemple :
 
+````php
 $x = 1;
 
 while($x <= 5) {
     echo "Le nombre est: $x <br>";
     $x++;
 }
+````
+
 
 Dans cet exemple, x est défini à 1, une boucle est crée : tant que x est inférieur ou égal à 5, on éxécute le bloc de code
 Dans ce bloc, on augmente x de 1 à chaque fois que le bloc est executé
@@ -36,13 +42,17 @@ Dans ce bloc, on augmente x de 1 à chaque fois que le bloc est executé
 
 - do ... while : On execute le bloc une premiere fois puis tant que la condition est vrai , on execute à nouveau le bloc
 
+````php
 do {
     //du code à executer
 }
 while(condition);
+````
+
 
 Exemple :
 
+````php
 $x = 1;
 
 do {
@@ -50,35 +60,40 @@ do {
     $x++;
 } 
 while ($x <= 5);
-
+````
 
 
 - for : On execute le bloc un nombre de fois défini à l'avance
 
+````php
 for(variable;test;increment) {
     //code a executer
 }
+````
 
 Exemple :
 
+````php
 for ($x = 0; $x <= 10; $x++) {
     echo "x vaux: $x <br>";
 }
-
+````
 
 - foreach : Boucle pour parcourir un tableau
 
+````php
 foreach($tableau as $valeur) {
     //code
 }
-
+````
 
 Exemple :
 
+````php
 $colors = array("red", "green", "blue", "yellow");
 
 foreach ($colors as $value) {
     echo "$value <br>";
 }
-
+````
 
